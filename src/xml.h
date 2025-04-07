@@ -188,6 +188,12 @@ size_t xml_string_length(struct xml_string* string);
  */
 void xml_string_copy(struct xml_string* string, uint8_t* buffer, size_t length);
 
+/**
+ * Returns the string value of the first attribute by the given name, or it
+ * will return NULL if it cannot be found.
+ */
+uint8_t* xml_easy_attr_content( struct xml_node * node, const uint8_t* attribute);
+
 #ifdef __cplusplus
 }
 #endif

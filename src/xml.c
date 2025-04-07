@@ -1127,3 +1127,33 @@ void xml_string_copy(struct xml_string* string, uint8_t* buffer, size_t length) 
 	memcpy(buffer, string->buffer, length);
 }
 
+
+uint8_t* xml_easy_attr_content( struct xml_node * node, const uint8_t* attribute) {
+
+	struct xml_string seek = {
+		.buffer = attribute,
+		.length = strlen( (char*)attribute )
+	};
+
+    if (seek.length > 0) {
+		// const size_t len = strlen( (char*)attribute );
+		const size_t num_attr = xml_node_attributes( node );
+
+
+		for(size_t i=0; i<num_attr; i++) {
+			struct xml_string * value = xml_node_attribute_name( node, i );
+	        if (xml_string_equals( value, &seek )) {
+        		struct xml_string * content = xml_node_attribute_content( node, i );
+        		if (content != NULL) {
+        			const size_t content_len = xml_string_length( content );
+        			uint8_t * attribute_content = malloc( content_len + 1 );
+        			xml_string_copy( content, attribute_content, content_len );
+
+	                return attribute_content;
+                }
+	        }
+		}
+	}
+
+    return NULL;
+}
