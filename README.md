@@ -1,3 +1,5 @@
+# This is a fork of [xml.c](https://github.com/ooxi/xml.c)
+
 xml.c
 =====
 
