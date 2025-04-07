@@ -8,7 +8,7 @@ which also just parses an xml subset, [xml.c](https://github.com/ooxi/xml.c) is
 a simple, small and self contained xml parser in one file. Ideal for embedding
 into other projects without the need for big external dependencies.
 
-[![Build Status](https://github.com/ooxi/xml.c/actions/workflows/ci.yaml/badge.svg)](https://github.com/ooxi/xml.c/actions)
+[![Build Status](https://github.com/hugovangalen/xml.c/actions/workflows/ci.yaml/badge.svg)](https://github.com/hugovangalen/xml.c/actions)
 
 
 Downloads
