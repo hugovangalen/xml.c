@@ -116,7 +116,7 @@ int main(int argc, char** argv) {
 }
 ```
 
-Another usage example can be found in the [unit case](https://github.com/ooxi/xml.c/blob/master/test/test-xml.c).
+Another usage example can be found in the [unit case](https://github.com/ooxi/xml.c/blob/master/test/test-xml-c.c).
 
 
 License
