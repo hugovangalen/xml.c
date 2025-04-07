@@ -26,7 +26,7 @@ Building xml.c
 Since xml.c uses [CMake](http://www.cmake.org/), building the library is fairly
 easy
 
-    $ git clone https://github.com/ooxi/xml.c.git xml.c
+    $ git clone https://github.com/hugovangalen/xml.c.git xml.c
     $ mkdir xml.c/build; cd xml.c/build
     $ cmake -DCMAKE_BUILD_TYPE=Release ..
     $ make && make test
